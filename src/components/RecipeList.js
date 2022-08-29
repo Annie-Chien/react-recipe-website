@@ -19,7 +19,7 @@ const RecipeList = () => {
         iure vel fuga tenetur omnis?
       </small>
       <Categories />
-      {recipes.length === 0 && (
+      {!loading && recipes.length === 0 && (
         <p className="display-1 bg-warning text-uppercase">No matches found</p>
       )}
       {loading && <Loading />}
